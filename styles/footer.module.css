@@ -1,0 +1,33 @@
+.wrapper {
+  /* padding: var(--space-xl) 0; */
+  padding: 1.5rem 0;
+  background-color: var(--gray-10);
+}
+
+.flexContainer {
+  composes: sideBySideCenter from "./utils.module.css";
+  gap: 1em;
+}
+
+.list {
+  display: flex;
+  gap: 2em;
+}
+
+/* ホバー */
+@media (hover: hover) {
+  .list a:hover {
+    color: var(--accent);
+  }
+}
+
+@media (hover: none) {
+  .list a {
+    -webkit-tap-highlight-color: transparent;
+    font-size: small;
+  }
+
+  .list a:active {
+    color: var(--accent);
+  }
+}

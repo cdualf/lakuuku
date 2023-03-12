@@ -1,0 +1,9 @@
+.flexContainer {
+  composes: spaceBetween from "styles/utils.module.css";
+  padding: 20px;
+}
+
+.main {
+  background-color: aqua;
+  padding: 10px;
+}

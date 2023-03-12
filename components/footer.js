@@ -1,7 +1,7 @@
-import styles from 'styles/footer.module.css'
-import Container from 'components/container'
+import styles from "styles/footer.module.css";
+import Container from "components/container";
 // import Social from 'components/social'
-import Link from 'next/link'
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -11,11 +11,9 @@ function Footer() {
           <div>&copy;2022 LAKUUKU All rights reserved.</div>
           <ul className={styles.list}>
             <li>
-              <Link href="/">
-                Home
-              </Link>            
+              <Link href="/">Home</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/policy">
                 プライバシーポリシー
               </Link>            
@@ -24,13 +22,13 @@ function Footer() {
               <Link href="/contact">
                 問い合わせ
               </Link>            
-            </li>
+            </li> */}
           </ul>
           {/* <Social /> */}
         </div>
       </Container>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

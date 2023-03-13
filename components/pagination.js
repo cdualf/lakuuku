@@ -8,16 +8,16 @@ function Pagination({ totalCount }) {
         [...Array(end - start + 1)].map((_, i) => start + i)
     
     return (
-        <ul className={style.main}>
-            {range(1, Math.ceil(totalCount / PER_PAGE)).map((number, index) => (
-            <li key={index}>
-                <Link href={`/blog/page/${number}`} className={style.link}>
-                    {number}
-                </Link>
-            </li>
-            ))}
-        </ul>
-    )
+      <ul className={style.main}>
+        {range(1, Math.ceil(totalCount / PER_PAGE)).map((number, index) => (
+          <li key={index}>
+            <Link href={`/blog/page/${number}`} className={style.link}>
+              {number}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    );
 
 }
 

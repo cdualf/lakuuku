@@ -9,7 +9,7 @@ function Profile() {
                 <Image
                     src={Maru}
                     alt="profile"
-                    layout='cover'
+                    // layout='cover'
                     width={100}
                     className={style.img}
                 />

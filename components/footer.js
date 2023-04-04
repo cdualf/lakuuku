@@ -13,18 +13,7 @@ function Footer() {
             <li>
               <Link href="/">Home</Link>
             </li>
-            {/* <li>
-              <Link href="/policy">
-                プライバシーポリシー
-              </Link>            
-            </li>
-            <li>
-              <Link href="/contact">
-                問い合わせ
-              </Link>            
-            </li> */}
           </ul>
-          {/* <Social /> */}
         </div>
       </Container>
     </footer>
